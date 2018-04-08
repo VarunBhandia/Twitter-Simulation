@@ -1,11 +1,8 @@
 <?php
-    include("serverblog.php"); 
-    $sqlcat = "SELECT * FROM category";
-    $resultcat = mysqli_query($conn, $sqlcat );
-    $rowcat = mysqli_fetch_assoc($resultcat);
-    $sqltest = "SELECT * FROM cec-blog";
-    $resulttest = mysqli_query($conn, $sqltest );
-    $rowtest = mysqli_fetch_assoc($resulttest);
+    include("config.php"); 
+    $sql = "SELECT * FROM tweet1";
+    $resultcat = mysqli_query($conn, $sql );
+    $row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,10 +45,8 @@
     <center>
     <h1 class="sidebar_header"> ADMIN PANEL
     </h1></center><div class="white"></div>
-  <a href="../admin/index.php">Blog Listing</a>
-  <a href="../admin/blog-writing.php">Blog Wrtiting</a>
-  <a href="../admin/team_details.php">Team Details</a>
-  <a href="/blog.php">Main Page Blog</a>
+  <a href="../admin/tweet2">Tweet 1</a>
+  <a href="../admin/tweet1">Tweet 2</a>
 </div>
 </div>
     <div class="col-md-10">
