@@ -1,6 +1,6 @@
 <?php
     include("config.php"); 
-    $sql = "SELECT * FROM tweet1";
+    $sql = "SELECT * FROM tweet2";
     $result = mysqli_query($conn, $sql );
     $row = mysqli_fetch_assoc($result);
 ?>
@@ -37,7 +37,7 @@
     <h1 class="sidebar_header"> ADMIN PANEL
     </h1></center><div class="white"></div>
   <a href="../admin/tweet2">Tweet 1</a>
-  <a href="../admin/tweet1">Tweet 2</a>
+  <a href="../admin/tweet2">Tweet 2</a>
 </div>
 </div>        
 -->
@@ -75,10 +75,10 @@
             
                 if($_POST['edit_submit'] == 'Submit')
                 {
-                    print $sql = "INSERT INTO `tweet1` (urls) VALUES ('$url')";
+                    print $sql = "INSERT INTO `tweet2` (urls) VALUES ('$url')";
                     if (mysqli_query($conn,$sql) === TRUE) 
                     {
-                     $sql = "INSERT INTO `tweet1` (url) VALUES ('$url')";
+                     $sql = "INSERT INTO `tweet2` (url) VALUES ('$url')";
                     }
                     else {echo "Error1: ";}
                 }

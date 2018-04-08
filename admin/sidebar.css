@@ -1,0 +1,61 @@
+.sidenav {
+height: 100%;
+    width: 17em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+padding-top: 1em;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 2em;
+    color: #818181;
+    display: block;
+    padding-left: 1em;}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+        .sidebar_header{
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    display: block;
+
+        }
+.main {
+}
+        .white{
+            background-color: white;
+            height: .1em;
+            width: 100%;
+        }
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  
+}
+
+        .patientsList {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+ .patientsList td {
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    color: #828282;
+}
+
+
+.patientsList tr:nth-child(odd){
+	background-color: #f2f2f2;
+}

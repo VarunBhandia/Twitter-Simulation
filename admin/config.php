@@ -1,10 +1,10 @@
 
 <?php 
-ini_set("display_errors",'off');
+ini_set("display_errors",'on');
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "cec";
+    $dbname = "twitter";
 
 //    $servername = "localhost";
 //    $username = "id4848840_varunbhandia";
