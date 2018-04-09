@@ -1,5 +1,5 @@
 <?php
-    include("..config/config.php"); 
+    include("../config/config.php"); 
 ?>
 <!DOCTYPE HTML>
 <html>

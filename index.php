@@ -1,5 +1,6 @@
 <?php
-    include("..config/config.php"); 
+    include("config/config.php"); 
+    include("function.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="en" data-scribe-reduced-action-queue="true">
@@ -183,26 +184,11 @@ data-item-type="tweet"
 
 <div class="js-tweet-text-container">
      <?php
-        $all_tweets = get_tweet_id($conn);
-        $cnt_tweets = count($all_tweets);
-        for($i = 0; $i < $cnt_topics; $i++)
+        $all_tweets_1 = get_tweet1_url($conn);
+        $cnt_tweets_1 = count($all_tweets_1);
+        for($i = 0; $i < $cnt_tweets_1; $i++)
         {
-            $sql44 = "SELECT * FROM `category` WHERE id = '$all_catid[$i]'";
-            $result44 = mysqli_query($conn, $sql44 ); 
-            $row44 = mysqli_fetch_assoc($result44);
-            $cate_id = $row44['id'];
-            print "<div class='col-md-4'>
-            <div class='thumbnail-posts'>
-            <a href='http://localhost/cec-Website/blog.php?id=".$all_blogid[$i]."&category=".$row44['name']."&topic=".$all_topics[$i]."&catid=".$all_catid[$i]."' target='_blank'>
-                <div class='thumbnail-posts-img'>
-                    <img src='#' style='width:100%'>
-                </div>
-                <div class='thumbnail-posts-content'>
-                    <h5>".$all_topics[$i]."</h5>
-                </div>
-            </a>
-        </div>
-    </div>";                        
+            echo $all_tweets_1[$i];                   
         }?>
 </div>
           </div>
