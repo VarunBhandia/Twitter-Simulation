@@ -23,4 +23,26 @@ function get_tweet1_url($conn){
     }
     return $result;
 }
+
+function get_tweet2_id($conn){
+    $sql = "SELECT * FROM `tweet2`";
+    $res = mysqli_query($conn, $sql );
+    $result = array();
+    while($data = mysqli_fetch_assoc($res))
+    {
+        $result[] = $data['id'];
+    }
+    return $result;
+}
+
+function get_tweet2_url($conn){
+    $sql = "SELECT * FROM `tweet2`";
+    $res = mysqli_query($conn, $sql );
+    $result = array();
+    while($data = mysqli_fetch_assoc($res))
+    {
+        $result[] = $data['urls'];
+    }
+    return $result;
+}
 ?>

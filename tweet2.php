@@ -142,7 +142,7 @@ data-fouc-class-names="swift-loading no-nav-banners"
     <ul class="trend-items js-trends">
         <li class="trend-item js-trend-item  context-trend-item" data-trend-name="#INDvSA" data-trends-id="8931628740321412241" data-trend-token=":tailored_request:hashtag_trend:taxi_region_source:social_context_1_metadescription:">
             <a class="pretty-link js-nav js-tooltip u-linkComplex" href="index.php">
-                <span class="u-linkComplex-target trend-name" dir="ltr">Tweet 1</span>
+                <span class="u-linkComplex-target trend-name" dir="ltr">Tweet 2</span>
                 <div class="js-nav trend-item-context"></div>
                 <div class="js-nav trend-item-stats">
                     @republic is Tweeting about this
@@ -151,7 +151,7 @@ data-fouc-class-names="swift-loading no-nav-banners"
         </li>
         
         <li class="trend-item js-trend-item  context-trend-item" >
-            <a class="pretty-link js-nav js-tooltip u-linkComplex"  href="tweet2.php">
+            <a class="pretty-link js-nav js-tooltip u-linkComplex" href="tweet2.php">
                 <span class="u-linkComplex-target trend-name" dir="ltr"> Tweet 2</span>
                 <div class="js-nav trend-item-context"></div>
                 <div class="js-nav trend-item-stats">
