@@ -1,17 +1,12 @@
 <?php
     include("config.php"); 
-    $sql = "SELECT * FROM tweet1";
-    $result = mysqli_query($conn, $sql );
-    $row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE HTML>
 <html>
 	<head>
-<!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
--->
         <title>TWEET 1</title>
         <link href="../admin/sidebar.css" rel="stylesheet" type="text/css">
         <style>
@@ -30,7 +25,6 @@
 	</head>
 	<body>
         <div class="row">
-<!--
             <div class="col-md-3">
         <div class="sidenav">
     <center>
@@ -40,7 +34,6 @@
   <a href="../admin/tweet1">Tweet 2</a>
 </div>
 </div>        
--->
             <div class="col-md-8">
         <div class="main">
 
@@ -60,7 +53,7 @@
                                 <label for="" class="control-label">Tweet URL</label>
                             </div>
                             <div class="col-md-10">
-                                <input type="text" class="form-control"  name="url" placeholder="Enter Tweet url" required value="<?php echo $row['url']; ?>">
+                                <input type="text" class="form-control"  name="url" placeholder="Enter Tweet url" required >
                             </div>
                         </div>
                     <input id="blogSubmit" name="edit_submit" type="submit" class="btn btn-primary submit_data" value="Submit">
@@ -73,17 +66,17 @@
         <?php          
             $url = $_POST['url'];
             
-                if($_POST['edit_submit'] == 'Submit')
+                if(isset($_POST['url']))
                 {
-                    print $sql = "INSERT INTO `tweet1` (urls) VALUES ('$url')";
+                    $sql = "INSERT INTO `tweet1` (urls) VALUES ('$url')";
                     if (mysqli_query($conn,$sql) === TRUE) 
                     {
-                     $sql = "INSERT INTO `tweet1` (url) VALUES ('$url')";
+                        $sql = "INSERT INTO `tweet1` (urls) VALUES ('$url')";
+                        echo 'Tweet has been submitted';
+                        header('Location: ../admin/index.php');
                     }
                     else {echo "Error1: ";}
                 }
-                
-              
         ?>
         </div>
             </div>
