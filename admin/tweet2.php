@@ -39,7 +39,7 @@
 
         <div class="row">
             <div class="col-md-11">
-                <h1 class="main-admin-heading">TWEETS</h1>
+                <h1 class="main-admin-heading">TWEET 2</h1>
             
             </div>
             </div>
@@ -53,7 +53,7 @@
                                 <label for="" class="control-label">Tweet URL</label>
                             </div>
                             <div class="col-md-10">
-                                <input type="text" class="form-control"  name="url" placeholder="Enter Tweet url" required >
+                                <input type="text" class="form-control"  name="url" placeholder="Paste Tweet url" required >
                             </div>
                         </div>
                     <input id="blogSubmit" name="edit_submit" type="submit" class="btn btn-primary submit_data" value="Submit">
