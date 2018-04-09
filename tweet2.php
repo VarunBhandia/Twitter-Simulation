@@ -184,11 +184,11 @@ data-item-type="tweet"
 
 <div class="js-tweet-text-container">
      <?php
-        $all_tweets_1 = get_tweet1_url($conn);
-        $cnt_tweets_1 = count($all_tweets_1);
-        for($i = 0; $i < $cnt_tweets_1; $i++)
+        $all_tweets_2 = get_tweet2_url($conn);
+        $cnt_tweets_2 = count($all_tweets_2);
+        for($i = 0; $i < $cnt_tweets_2; $i++)
         {
-            echo $all_tweets_1[$i];                   
+            echo $all_tweets_2[$i];                   
         }?>
 </div>
           </div>

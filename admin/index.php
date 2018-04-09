@@ -30,8 +30,8 @@
     <center>
     <h1 class="sidebar_header"> ADMIN PANEL
     </h1></center><div class="white"></div>
-  <a href="../admin/tweet2">Tweet 1</a>
-  <a href="../admin/tweet1">Tweet 2</a>
+  <a href="../admin/index.php">Tweet 1</a>
+  <a href="../admin/tweet2.php">Tweet 2</a>
 </div>
 </div>        
             <div class="col-md-8">
